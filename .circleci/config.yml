@@ -39,8 +39,7 @@ jobs:
     docker:
       - image: alpine
     steps:
-      - common-say-hello:
-          custom-parameter: jennys-custom-param
+      - common-say-hello
       - run: echo 'Jobs with `common-` prefix are intended to be shared among modules'
 
 workflows:
@@ -181,4 +180,4 @@ orbs:
               continue-config: << parameters.continue-config >>
           - continuation/continue:
               configuration_path: << parameters.continue-config >>
-              parameters: '{"run-setup":false}'
+              parameters: '{"run-setup":false, "custom-parameter":jens-custom-param}'
