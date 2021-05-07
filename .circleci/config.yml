@@ -180,4 +180,4 @@ orbs:
               continue-config: << parameters.continue-config >>
           - continuation/continue:
               configuration_path: << parameters.continue-config >>
-              parameters: '{"run-setup":false, "custom-parameter":jens-custom-param}'
+              parameters: '{"run-setup":false, "custom-parameter":"jens-custom-param"}'
