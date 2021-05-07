@@ -39,7 +39,8 @@ jobs:
     docker:
       - image: alpine
     steps:
-      - common-say-hello
+      - common-say-hello:
+          custom-parameter: jennys-custom-param
       - run: echo 'Jobs with `common-` prefix are intended to be shared among modules'
 
 workflows:
